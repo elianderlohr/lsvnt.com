@@ -1,0 +1,505 @@
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.font-yellow {
+    color: rgba(242, 197, 76, 1);
+}
+
+.didot {
+    font-family: "Didot", serif;
+}
+
+.didot-bold {
+    font-family: "Didot", serif;
+    font-weight: bold;
+}
+
+.helvetica {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.bold {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.lsvnt-header-item {
+    margin-top: 5px;
+}
+
+.lsvnt-header-item:hover {
+    color: rgba(242, 197, 76, 1);
+}
+
+
+
+@media screen and (max-width:400px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 0px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 0px;
+    }
+
+    .identity-title {
+        font-size: 50px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 60px;
+    }
+
+    .font-about {
+        font-size: 20px;
+    }
+
+    .img-size {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .skills-padding {
+        padding-top: 50px;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 100px;
+    }
+
+    #fitvia-ads-block-left {
+        width: 100%;
+    }
+
+    #fitvia-ads-block-right {
+        width: 100%;
+        text-align: center;
+        height: 1000px;
+    }
+
+    #fitvia-ads-block-right-img1 {
+        width: 100%;
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+
+    #fitvia-ads-block-right-img2 {
+        width: 100%;
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+
+    #fitvia-tea-group-1 {
+        text-align: center;
+    }
+
+    #fitvia-ads-block {
+        width: 100%;
+        height: auto;
+        padding-top: 150px
+    }
+
+    #fitvia-ads-block-right-text {
+        text-align: right;
+        width: 100%;
+    }
+
+    .fitvia-row-img {
+        width: 300px;
+    }
+
+    .fitvia-tea-group-2-img {
+        width: 100%;
+        float: left;
+    }
+
+    #fitvia-calender {
+        text-align: center;
+    }
+
+    #fitvia-calender-text {
+        text-align: right;
+        width: 100%;
+    }
+
+    .image-box {
+        text-align: center;
+    }
+
+    #fitvia-calender-img {
+        text-align: center;
+    }
+
+    #fitvia-motivation-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width: 400px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    #fitvia-tea-group-1 {
+        text-align: center;
+    }
+
+    #fitvia-tea-group-center-img {
+        width: 100%;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 0px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 0px;
+    }
+
+    .identity-title {
+        font-size: 70px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 90px;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .project-left {
+        float: center;
+    }
+
+    .skills-padding {
+        padding-top: 50px;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 100px;
+    }
+
+
+
+    .footer {
+        padding-top: 100px;
+    }
+
+
+    #fitvia-ads-block-left {
+        width: 100%;
+    }
+
+    #fitvia-ads-block-right {
+        width: 100%;
+        text-align: center;
+        height: 1000px;
+    }
+
+    #fitvia-ads-block-right-img1 {
+        width: 400px;
+        padding-top: 50px;
+    }
+
+    #fitvia-ads-block-right-img2 {
+        width: 300px;
+        padding-top: 50px;
+    }
+
+    #fitvia-ads-block {
+        width: 100%;
+        height: auto;
+        padding-top: 150px
+    }
+
+    #fitvia-ads-block-right-text {
+        text-align: right;
+        width: 100%;
+    }
+
+    .fitvia-row-img {
+        width: 300px;
+    }
+
+    .fitvia-tea-group-2-img {
+        width: 100%;
+        float: left;
+    }
+
+    #fitvia-calender {
+        text-align: center;
+    }
+
+    #fitvia-calender-text {
+        text-align: right;
+        width: 100%;
+    }
+
+    .image-box {
+        text-align: center;
+    }
+
+    #fitvia-calender-img {
+        text-align: center;
+    }
+
+    #fitvia-motivation-text {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:1700px) and (min-width: 1000px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 50px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 50px;
+    }
+
+    .identity-title {
+        font-size: 80px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 150px;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 100px;
+    }
+
+
+
+    .footer {
+        padding-top: 100px;
+    }
+
+
+
+    #fitvia-ads-block-left {
+        float: left;
+        width: 800px;
+    }
+
+    #fitvia-ads-block-right {
+        float: right;
+        width: 700px;
+        text-align: right;
+    }
+
+    #fitvia-ads-block-right-img1 {
+        width: 400px;
+        z-index: 1;
+        margin-top: 50px;
+    }
+
+    #fitvia-ads-block-right-img2 {
+        width: 300px;
+        z-index: 2;
+        margin-top: -100px;
+        margin-right: 350px;
+    }
+
+    #fitvia-ads-block {
+        width: 100%;
+        height: 850px;
+        padding-top: 150px
+    }
+
+    #fitvia-ads-block-right-text {
+        text-align: right;
+        width: 100%;
+    }
+
+    .fitvia-row-img {
+        width: 300px;
+    }
+
+    .fitvia-tea-group-2-img {
+        width: 700px;
+        float: left;
+    }
+
+    #fitvia-calender {
+        text-align: right;
+    }
+
+    #fitvia-calender-text {
+        text-align: right;
+        width: 100%;
+    }
+
+    .image-box {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width:1700px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 150px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 150px;
+    }
+
+    .identity-title {
+        font-size: 95px;
+        font-style: normal;
+        font-variant: normal;
+    }
+
+    .designer-title {
+        font-size: 175px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 0px;
+        width: 900px;
+    }
+
+    .image-box {
+        max-width: 900px;
+    }
+
+    .lsvnt-container {
+        align-items: center;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 350px;
+    }
+
+
+
+    .footer {
+        padding-top: 100px;
+    }
+
+
+    #fitvia-ads-block-left {
+        float: left;
+        width: 800px;
+    }
+
+    #fitvia-ads-block-right {
+        float: right;
+        width: 700px;
+        text-align: right;
+    }
+
+    #fitvia-ads-block-right-img1 {
+        width: 400px;
+        z-index: 1;
+        margin-top: 50px;
+    }
+
+    #fitvia-ads-block-right-img2 {
+        width: 300px;
+        z-index: 2;
+        margin-top: -100px;
+        margin-right: 350px;
+    }
+
+    #fitvia-ads-block {
+        width: 100%;
+        height: 850px;
+        padding-top: 150px
+    }
+
+    #fitvia-ads-block-right-text {
+        text-align: right;
+        width: 100%;
+    }
+
+    .fitvia-row-img {
+        width: 300px;
+    }
+
+    .fitvia-tea-group-2-img {
+        width: 700px;
+        float: left;
+    }
+
+    #fitvia-calender {
+        text-align: right;
+    }
+
+    #fitvia-calender-text {
+        text-align: right;
+        width: 100%;
+    }
+}

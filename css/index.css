@@ -1,0 +1,224 @@
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.font-yellow {
+    color: rgba(242, 197, 76, 1);
+}
+
+.didot {
+    font-family: "Didot", serif;
+}
+
+.didot-bold {
+    font-family: "Didot", serif;
+    font-weight: bold;
+}
+
+.helvetica {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.bold {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.lsvnt-header-item {
+    margin-top: 5px;
+}
+
+.lsvnt-header-item:hover {
+    color: rgba(242, 197, 76, 1);
+}
+
+@media screen and (max-width:400px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 0px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 0px;
+    }
+
+
+    .identity-title {
+        font-size: 50px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 60px;
+    }
+
+    .font-about {
+        font-size: 20px;
+    }
+
+    .img-size {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .skills-padding {
+        padding-top: 50px;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (min-width: 400px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 0px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 0px;
+    }
+
+
+    .identity-title {
+        font-size: 70px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 90px;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .project-left {
+        float: center;
+    }
+
+    .skills-padding {
+        padding-top: 50px;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:1700px) and (min-width: 1000px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 50px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 50px;
+    }
+
+
+    .identity-title {
+        font-size: 6.5vw;
+        /*80px;*/
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 11vw;
+        ;
+        /*150px;*/
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 0px;
+        width: 500px;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 24px;
+    }
+
+}
+
+
+@media screen and (min-width:1700px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 150px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 150px;
+    }
+
+
+    .identity-title {
+        font-size: 95px;
+        font-style: normal;
+        font-variant: normal;
+    }
+
+    .designer-title {
+        font-size: 175px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 0px;
+        width: 600px;
+    }
+
+    .lsvnt-container {
+        align-items: center;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 30px;
+    }
+
+    .cv-title {
+        max-width: 800px;
+    }
+}

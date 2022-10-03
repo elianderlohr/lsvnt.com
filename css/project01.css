@@ -1,0 +1,389 @@
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.font-yellow {
+    color: rgba(242, 197, 76, 1);
+}
+
+.didot {
+    font-family: "Didot", serif;
+}
+
+.didot-bold {
+    font-family: "Didot", serif;
+    font-weight: bold;
+}
+
+.helvetica {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.bold {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.lsvnt-header-item {
+    margin-top: 5px;
+}
+
+.lsvnt-header-item:hover {
+    color: rgba(242, 197, 76, 1);
+}
+
+
+
+@media screen and (max-width:400px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 0px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 0px;
+    }
+
+    .identity-title {
+        font-size: 50px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 60px;
+    }
+
+    .font-about {
+        font-size: 20px;
+    }
+
+    .img-size {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .skills-padding {
+        padding-top: 50px;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 100px;
+    }
+
+    .etik-supermarket-img {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .etik-row-img {
+        width: 100%;
+    }
+
+    .etik-app-img {
+        width: calc(50% - 10px);
+    }
+
+    #etik-block-1-img-group {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    #etik-block-1-img {
+        width: 100%;
+    }
+
+    #etik-block-1-text {
+        font-size: 20px;
+    }
+
+    #etik-block-1-text-group {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width: 400px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 0px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 0px;
+    }
+
+    .identity-title {
+        font-size: 70px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 90px;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .project-left {
+        float: center;
+    }
+
+    .skills-padding {
+        padding-top: 50px;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 100px;
+    }
+
+    #etik-supermarket-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    #etik-block-1 {
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    #etik-block-2 {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .footer {
+        padding-top: 100px;
+    }
+
+
+    #etik-block-1-img-group {
+        width: 100%;
+        text-align: center;
+    }
+
+    #etik-block-1-img {
+        width: 100%;
+    }
+
+    #etik-block-1-text {
+        font-size: 20px;
+    }
+
+    #etik-block-1-text-group {
+        width: 100%;
+        text-align: center;
+    }
+
+    #etik-recipe-group {
+        width: 100%;
+        text-align: center;
+    }
+
+    .etik-row-img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1700px) and (min-width: 1000px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 50px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 50px;
+    }
+
+    .identity-title {
+        font-size: 80px;
+        font-style: normal;
+    }
+
+    .designer-title {
+        font-size: 150px;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 100px;
+    }
+
+    #etik-supermarket-img {
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    #etik-block-1 {
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    #etik-block-2 {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .footer {
+        padding-top: 100px;
+    }
+
+    #etik-block-1-img-group {
+        width: 100%;
+        text-align: center;
+    }
+
+    #etik-block-1-text {
+        font-size: 30px;
+    }
+
+    #etik-block-1-text-group {
+        padding-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width:1700px) {
+    .header {
+        padding-top: 150px;
+    }
+
+    .lsvnt-padding-left {
+        padding-left: 150px;
+    }
+
+    .lsvnt-padding-right {
+        padding-right: 150px;
+    }
+
+    .identity-title {
+        font-size: 95px;
+        font-style: normal;
+        font-variant: normal;
+    }
+
+    .designer-title {
+        font-size: 175px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+    }
+
+    .font-about {
+        font-size: 25px;
+    }
+
+    .img-size {
+        padding-top: 0px;
+        width: 900px;
+    }
+
+    .image-box {
+        max-width: 900px;
+    }
+
+    .lsvnt-container {
+        align-items: center;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+
+    .lsvnt-about-nine {
+        font-size: 20px;
+    }
+
+    #project-desc {
+        padding-top: 350px;
+    }
+
+    #etik-supermarket-img {
+        width: 1000px;
+        padding-top: 200px;
+    }
+
+    #etik-block-1 {
+        padding-top: 100px;
+    }
+
+    #etik-block-2 {
+        padding-top: 100px;
+    }
+
+    .footer {
+        padding-top: 100px;
+    }
+
+    #etik-block-1-img-group {
+        text-align: none;
+        float: left;
+    }
+
+    #etik-block-1-img {
+        width: 600px;
+    }
+
+    #etik-block-1-text {
+        font-size: 20px;
+        padding-top: 50px;
+    }
+
+    #etik-block-1-text-group {
+        float: right;
+        width: 100%;
+        text-align: center;
+        max-width: calc(100%/2)
+    }
+
+}

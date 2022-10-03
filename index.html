@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Nine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/helvetica-neue-9">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        function fadeIn() {
+            var reveals = document.querySelectorAll(".lsvnt-animate-fadein");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate__animated");
+                    reveals[i].classList.add("animate__fadeIn");
+                } //else {
+                // reveals[i].classList.remove("animate__animated");
+                // reveals[i].classList.remove("animate__fadeIn");
+                //}
+            }
+        }
+        function right() {
+            var reveals = document.querySelectorAll(".lsvnt-animate-right");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate__animated");
+                    reveals[i].classList.add("animate__fadeInRight");
+                } //else {
+                // reveals[i].classList.remove("animate__animated");
+                // reveals[i].classList.remove("animate__fadeIn");
+                //}
+            }
+        }
+        function left() {
+            var reveals = document.querySelectorAll(".lsvnt-animate-left");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate__animated");
+                    reveals[i].classList.add("animate__fadeInLeft");
+                } //else {
+                // reveals[i].classList.remove("animate__animated");
+                // reveals[i].classList.remove("animate__fadeIn");
+                //}
+            }
+        }
+
+        fadeIn()
+        right()
+        left()
+
+        window.addEventListener("scroll", fadeIn);
+        window.addEventListener("scroll", right);
+        window.addEventListener("scroll", left);
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white lsvnt-container lsvnt-padding-left lsvnt-padding-right" id="myNavbar">
+            <a href="#home" class="lsvnt-header-item w3-bar-item w3-wide helvetica">N I N E &nbsp;<span
+                    class="font-yellow helvetica">L
+                    E&nbsp; S A V É A N T</span></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#portfolio" data-offset="300" class="w3-bar-item lsvnt-header-item helvetica">PORTFOLIO</a>
+                <a href="#about" data-offset="300" class="w3-bar-item lsvnt-header-item helvetica">ABOUT</a>
+                <a href="#contact" data-offset="300" class="w3-bar-item lsvnt-header-item helvetica">CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button"
+            style="font-family: 'Helvetica Neue', sans-serif;">PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <div class="w3-container lsvnt-container header">
+        <div class=" lsvnt-padding-left lsvnt-padding-right">
+            <span class="font-yellow didot identity-title" style="line-height: 1.2em;"><i>IDENTITY</i>
+                <span class="designer-title didot-bold">DESIGNER</span></span><br>
+        </div>
+    </div>
+
+    <div id="home" class="w3-container lsvnt-container" style="padding-top: 50px;">
+        <div class="lsvnt-padding-left animate__animated animate__fadeInLeft" style="float: left;">
+            <span style="line-height: 1.2em;">
+                <span class="font-about font-yellow bold">LOCATION</span><br>
+                <span class="font-about helvetica">Wiesbaden, Germany</span><br>
+            </span>
+            <br>
+            <span style="line-height: 1.2em;">
+                <span class="font-about font-yellow bold">NATIONALITY</span><br>
+                <span class="font-about helvetica">French</span>
+            </span>
+        </div>
+        <div class="lsvnt-padding-right" style="float: right; line-height: 2em;">
+            <img class="img-size animate__animated animate__fadeIn" src="img/nine-img.png">
+            <br><br>
+            <span class="lsvnt-about-nine bold helvetica animate__animated animate__fadeIn"
+                style="float: right; text-align: right; ">Hello!
+                I’m Nine
+                Le Savéant<br>
+                and I’m a Junior Graphic / Brand Designer.</span>
+        </div>
+    </div>
+    <div class="lsvnt-container lsvnt-padding-left lsvnt-padding-right">
+        <hr class="solid " style="border-top: 2px solid rgba(242, 197, 76, 1);">
+    </div>
+
+    <div class="w3-container lsvnt-container" id="portfolio">
+        <span class="lsvnt-padding-left font-about font-yellow didot-bold" style="font-size: 50px;">MY
+            <i>PORT</i>FOLIO</span><br>
+        <div class="lsvnt-padding-left lsvnt-padding-right">
+
+            <a class="project-left " href="/project01" style="width: 100%;">
+                <div id="project1">
+                    <img class="img-size lsvnt-animate-fadein" src="img/etik-project01.png">
+                    <br><br>
+                    <span class="helvetica"
+                        style="float: left; text-align: left; font-size: 20px; line-height: 1.2em;"><b
+                            class="bold">ETIK</b> -
+                        Project
+                        01<br>
+                        <i style="color: rgba(0,0,0,0.537); font-size: 18px;">Branding - UX/UI Design</i></span>
+                </div>
+            </a>
+            <a class="project-right" href="/project02" style="float: right; width: 100%;">
+                <div id="project2" style="float: right;">
+                    <img class="img-size lsvnt-animate-fadein" src="img/magazine-project02.png">
+                    <br><br>
+                    <span class=" helvetica"
+                        style="float: right; text-align: right; font-size: 20px; line-height: 1.2em;"><b
+                            class="bold">SOUP
+                            BAR</b> -
+                        Project
+                        02<br>
+                        <i style="color: rgba(0,0,0,0.537); font-size: 18px;">Branding - Edition</i></span>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="lsvnt-padding-left lsvnt-padding-right">
+
+            <a class="project-left" href="/project03" style="float: left; width: 100%;">
+                <div id="project3" style="float: left;">
+                    <img class="img-size lsvnt-animate-fadein" src="img/ovhcloud-project03.png">
+                    <br><br>
+                    <span class="helvetica"
+                        style="float: left; text-align: left; font-size: 20px; line-height: 1.2em;"><b
+                            class="bold">OVHCLOUD</b> -
+                        Project
+                        03<br>
+                        <i style="color: rgba(0,0,0,0.537); font-size: 18px;">UX/UI Design</i></span>
+                </div>
+            </a>
+
+            <a class="project-right" href="/project04" style="float: right; width: 100%;">
+                <div id="project4" style="float: right;">
+                    <img class="img-size lsvnt-animate-fadein" src="img/fitvia-project04.png">
+                    <br><br>
+                    <span class=" helvetica"
+                        style="float: right; text-align: right; font-size: 20px; line-height: 1.2em;"><b
+                            class="bold">FITVIA</b>
+                        -
+                        Project
+                        04<br>
+                        <i style="color: rgba(0,0,0,0.537); font-size: 18px;">Branding - Packaging - Social
+                            Media</i></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="w3-container lsvnt-container" id="about">
+        <span class="lsvnt-padding-left font-about font-yellow didot-bold" style="font-size: 50px;">AB<i>OUT</i>
+            ME</span><br>
+        <div>
+            <div class="lsvnt-padding-left" style="float: left; max-width: 750px; line-height: 1.8em;">
+                <span class="bold" style="font-size: 20px;">
+                    It is important for me to discover the world
+                    and myself, it is something crucial
+                </span>
+                <br>
+                <p class="helvetica" style="font-size: 20px; line-height: 1.2em;">
+                    Having done ice skating for 9 years,<br> sport really allowed
+                    me to learn about myself.<br>
+                    This practice taught me patience and concentration.<br>
+                    I have become persistent, so that when I fail, I start<br>
+                    again. Cooking also is one of my passions.<br>
+                    It is a form of creation: to assemble different ingredients,<br>
+                    textures, ideas… It’s a fun research space for my work.<br>
+                    A dish can tell a story in a sensitive way.
+                </p>
+            </div>
+            <div class="lsvnt-padding-left skills-padding" style="float: left; max-width: 750px;">
+                <span class="bold font-yellow" style="font-size: 20px;">
+                    SKILLS
+                </span>
+                <br>
+                <span class="helvetica" style="font-size: 20px; line-height: 1.2em;">
+                    Photoshop, Indesign, Illustrator,<br>
+                    Rhino 3D, Première Pro, After Effects,<br>
+                    Figma and Adobe XD
+                </span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="w3-container lsvnt-container">
+        <div class="lsvnt-padding-left" style="max-width: 750px; float: left;">
+            <span class="font-about font-yellow bold" style="font-size: 20px;">EXPERIENCES</span><br>
+            <br>
+            <div>
+                <div style="float: left; width: 100%;">
+                    <div style="float: left;">
+                        <span class="helvetica" style="font-size: 20px;">2022</span>
+                    </div>
+                    <div class="cv-title" style="float: left; padding-left: 20px;">
+                        <span class="bold" style="font-size: 20px;">
+                            Fitvia Wiesbaden (Since April)
+                        </span>
+                        <br>
+                        <span class="helvetica" style="font-size: 20px; line-height: 1.2em;">
+                            Graphic Designer
+                        </span>
+                    </div>
+                </div>
+                <div class="cv-title" style="float: left; width: 100%; padding-top: 25px;">
+                    <div style="float: left;">
+                        <span class="helvetica" style="font-size: 20px;">2021</span>
+                    </div>
+                    <div style="float: left; padding-left: 20px;">
+                        <span class="bold" style="font-size: 20px;">
+                            AMPP Brussels (6 months)
+                        </span>
+                        <br>
+                        <span class="helvetica " style="font-size: 20px; line-height: 1.2em;">
+                            Internship in a design agency - Graphic Designer
+                        </span>
+                    </div>
+                </div>
+                <div class="cv-title" style="float: left; width: 100%; padding-top: 25px;">
+                    <div style="float: left;">
+                        <span class="helvetica" style="font-size: 20px;">2019</span>
+                    </div>
+                    <div style="float: left; padding-left: 20px;">
+                        <span class="bold" style="font-size: 20px;">
+                            SchooLab (6 months)
+                        </span>
+                        <br>
+                        <span class="helvetica" style="font-size: 20px; line-height: 1.2em;">
+                            Project with OVHcloud<br>
+                            «The ecological impact of the OVHcloud services»
+                        </span>
+                    </div>
+                </div>
+                <div class="cv-title" style="float: left; width: 100%; padding-top: 25px;">
+                    <div style="float: left;">
+                        <span class="helvetica" style="font-size: 20px;">2019</span>
+                    </div>
+                    <div style="float: left; padding-left: 20px;">
+                        <span class="bold" style="font-size: 20px;">
+                            Subdesign (6 months)
+                        </span>
+                        <br>
+                        <span class="helvetica" style="font-size: 20px; line-height: 1.2em;">
+                            Internship in a design agency - Assistant Art Director
+                        </span>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="lsvnt-padding-left" style="max-width: 750px; float: left; padding-top: 150px;">
+            <span class="font-about font-yellow bold" style="font-size: 20px;">EDUCATION</span><br>
+            <br>
+            <div>
+                <div style="float: left; width: 100%;">
+                    <div style="float: left;">
+                        <span class="helvetica" style="font-size: 20px;">2022</span>
+                    </div>
+                    <div class="cv-title" style="float: left; padding-left: 20px; max-width: 500px;">
+                        <span class="bold" style="font-size: 20px;">
+                            Master of Design - Strate, Paris (FR)
+                        </span>
+                        <br>
+                        <span class="helvetica" style="font-size: 20px; line-height: 1.2em;">
+                            Bachelor and Master of Design - 3rd, 4th<br>
+                            and 5th years: visual identity design,<br>
+                            Partnerships with Servier Laboratory (6 months),<br>
+                            Bel company (4 months) and Entrecom (2 months)<br>
+                            2nd year: introduction to product, interaction,<br>
+                            space, mobility and identity 1st year: art history,<br>
+                            perspective, life drawing, etc.
+                        </span>
+                    </div>
+                </div>
+                <div class="cv-title" style="float: left; width: 100%; padding-top: 25px;">
+                    <div style="float: left;">
+                        <span class="helvetica" style="font-size: 20px;">2021</span>
+                    </div>
+                    <div style="float: left; padding-left: 20px;">
+                        <span class="bold" style="font-size: 20px;">
+                            LAB University of Applied Sciences, Finland
+                        </span>
+                        <br>
+                        <span class="helvetica" style="font-size: 20px; line-height: 1.2em;">
+                            Exchange student for 6 month<br>
+                            Commercial publications, strategic design, <br>sustainable design,
+                            intercultural awareness, <br>multicultural teamwork and Finnish
+                        </span>
+                    </div>
+                </div>
+                <div class="cv-title" style="float: left; width: 100%; padding-top: 25px;">
+                    <div style="float: left;">
+                        <span class="helvetica" style="font-size: 20px;">2019</span>
+                    </div>
+                    <div style="float: left; padding-left: 20px;">
+                        <span class="bold" style="font-size: 20px; line-height: 1.2em;">
+                            Foundation year in applied arts
+                        </span>
+                        <br>
+                        <span class="helvetica" style="font-size: 20px;">
+                            Atelier de Sèvres, Paris
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="lsvnt-container lsvnt-padding-left lsvnt-padding-right">
+        <hr class="solid " style="border-top: 2px solid rgba(242, 197, 76, 1);">
+    </div>
+
+    <!-- Footer -->
+    <div class="w3-container lsvnt-container" id="contact">
+
+        <span class="lsvnt-padding-left font-about font-yellow didot-bold" style="font-size: 50px;">CON<i>TACT</i>
+            ME</span>
+        <br>
+        <a class="lsvnt-padding-left" href="mailto:n.lesaveant@strate.design" style="font-size: 20px;"><span
+                class="helvetica"><i>n.lesaveant@strate.design</i></span></a><br>
+        <a class="lsvnt-padding-left" href="https://www.linkedin.com/in/nine-ls/" class="font-yellow"
+            style="font-size: 20px;"><span class="bold">LinkedIn</span></a><br>
+        <a class="lsvnt-padding-left lsvnt-padding-right helvetica" href="#home" class="w3-button w3-light-grey"
+            style="font-size: 20px; float: right; text-decoration: underline; text-decoration-color: rgba(242, 197, 76, 1); text-decoration-thickness: 3px; text-underline-offset: 6px;">Back
+            to
+            top</a>
+        <br>
+        <br>
+
+        <span class="lsvnt-padding-left helvetica" style="font-size: 15px;">Copyright 2022. nine.lsvnt.com. All rights
+            reserved.</span>
+        <br>
+        <span class="lsvnt-padding-left helvetica" style="font-size: 15px;">Made with ❤️ in Wiesbaden</span><br>
+        <br>
+    </div>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

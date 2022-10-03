@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project 01 - ETIK</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/helvetica-neue-9">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/project01.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../js/index.js?id=1"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        function fadeIn() {
+            var reveals = document.querySelectorAll(".lsvnt-animate-fadein");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate__animated");
+                    reveals[i].classList.add("animate__fadeIn");
+                } //else {
+                // reveals[i].classList.remove("animate__animated");
+                // reveals[i].classList.remove("animate__fadeIn");
+                //}
+            }
+        }
+        function right() {
+            var reveals = document.querySelectorAll(".lsvnt-animate-right");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate__animated");
+                    reveals[i].classList.add("animate__fadeInRight");
+                } //else {
+                // reveals[i].classList.remove("animate__animated");
+                // reveals[i].classList.remove("animate__fadeIn");
+                //}
+            }
+        }
+        function left() {
+            var reveals = document.querySelectorAll(".lsvnt-animate-left");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate__animated");
+                    reveals[i].classList.add("animate__fadeInLeft");
+                } //else {
+                // reveals[i].classList.remove("animate__animated");
+                // reveals[i].classList.remove("animate__fadeIn");
+                //}
+            }
+        }
+        function bottom() {
+            var reveals = document.querySelectorAll(".lsvnt-animate-bottom");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate__animated");
+                    reveals[i].classList.add("animate__fadeInUp");
+                } //else {
+                // reveals[i].classList.remove("animate__animated");
+                // reveals[i].classList.remove("animate__fadeIn");
+                //}
+            }
+        }
+
+        fadeIn()
+        right()
+        left()
+        bottom()
+
+        window.addEventListener("scroll", bottom);
+        window.addEventListener("scroll", fadeIn);
+        window.addEventListener("scroll", right);
+        window.addEventListener("scroll", left);
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white lsvnt-container lsvnt-padding-left lsvnt-padding-right" id="myNavbar">
+            <a href="/" class="lsvnt-header-item w3-bar-item w3-wide helvetica">N I N E &nbsp;<span
+                    class="font-yellow helvetica">L
+                    E&nbsp; S A V É A N T</span></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="/" class="w3-bar-item lsvnt-header-item helvetica">HOME</a>
+                <a href="#contact" class="w3-bar-item lsvnt-header-item helvetica">CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+
+        <a href="/" onclick="w3_close()" class="w3-bar-item w3-button"
+            style="font-family: 'Helvetica Neue', sans-serif;">HOME</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <div class="w3-container lsvnt-container header">
+        <div class=" lsvnt-padding-left lsvnt-padding-right">
+            <span class="font-yellow didot identity-title" style="line-height: 1.2em; z-index: 1;">PRO<i>JECT</i>
+                01</span>
+        </div>
+    </div>
+
+    <div id="home" class="w3-container lsvnt-container" style="margin-top: -50px;">
+        <div id="project-desc" class="lsvnt-padding-left animate__animated animate__fadeInLeft" style="float: left; ">
+            <span style="line-height: 1.2em;">
+                <span class="font-about font-yellow bold">DATE</span><br>
+                <span class="font-about helvetica">June, 2021</span><br>
+            </span>
+            <br>
+            <span style="line-height: 1.2em;">
+                <span class="font-about font-yellow bold">TYPE</span><br>
+                <span class="font-about helvetica">Branding, UX/UI Design</span>
+            </span>
+        </div>
+        <div class="lsvnt-padding-right" style="float: right;">
+            <img class="img-size" style="z-index: 0;" src="../img/image-intro.png">
+            <br><br>
+            <div class="image-box">
+                <span class="lsvnt-about-nine bold" style="float: left; text-align: left;">How as a designer can I
+                    help
+                    citizens making ethical choices without denying
+                    their culture ?</span>
+                <br>
+                <br>
+                <span class="lsvnt-about-nine helvetica" style="float: right; text-align: left;">I created ETIK, a
+                    Christmas program for supermarkets. The ETIK program is set up
+                    3 weeks before Christmas so that the consumer adopts good practices before
+                    the festive season.
+                    their culture ?</span>
+            </div>
+        </div>
+    </div>
+    <div class="lsvnt-container lsvnt-animate-bottom" style="padding-top: 25px; ">
+        <img src="../img/etik-full-screen.png" style="width: 100%;">
+    </div>
+    <div id="etik-recipe-group" class="w3-container lsvnt-container" style="padding-top: 50px;">
+        <img class="etik-row-img" src="../img/image-recipe03.png" alt="Recipe 3" align="right" style="float:right;" />
+        <img class="etik-row-img" src="../img/image-recipe01.png" alt="Recipe 1" align="left" style="float:left" />
+        <div id="content" align="center">
+            <img class="etik-row-img" src="../img/image-recipe02.png" alt="Recipe 2" align="center" />
+        </div>
+    </div>
+    <div class="w3-container lsvnt-container " style="text-align: center;">
+        <img id="etik-supermarket-img" src="../img/image-supermarket.png" style="width: 50%;">
+    </div>
+    <div id="etik-block-1" class="w3-container lsvnt-container">
+        <div id="etik-block-1-img-group" class="lsvnt-animate-fadein">
+            <img id="etik-block-1-img" src="../img/app-image.png" alt="">
+        </div>
+        <div id="etik-block-1-text-group" class="lsvnt-animate-right">
+            <img style="float: left; width: 100%;" src="../img/image-mockup.png" alt="">
+            <br>
+            <span id="etik-block-1-text" class="helvetica" style="float: left; text-align: left;">
+                The French are very attached to the tradition of the Christmas Eve
+                meal. It is a moment of conviviality where we meet as a family
+                to prepare a festive meal and to elaborate the best.
+                However, this traditional meal has become a strong time
+                of consumerism and the products are not always in accordance
+                with our values. Etik is committed to reaching some
+                of the Sustainable Development Goals (SDG).
+            </span>
+        </div>
+    </div>
+    <div id="etik-block-2" class="w3-container lsvnt-container">
+        <img class="etik-app-img lsvnt-animate-fadein" src="../img/app01-image.png" alt="App Image 1">
+        <img class="etik-app-img lsvnt-animate-fadein" src="../img/app02-image.png" alt="App Image 2">
+        <img class="etik-app-img lsvnt-animate-fadein" src="../img/app03-image.png" alt="App Image 3">
+        <img class="etik-app-img lsvnt-animate-fadein" src="../img/app04-image.png" alt="App Image 4">
+    </div>
+
+    <div class="lsvnt-container lsvnt-padding-left lsvnt-padding-right footer">
+        <hr class="solid " style="border-top: 2px solid rgba(242, 197, 76, 1);">
+    </div>
+
+    <!-- Footer -->
+    <div class="w3-container lsvnt-container" id="contact">
+
+        <span class="lsvnt-padding-left font-about font-yellow didot-bold" style="font-size: 50px;">CON<i>TACT</i>
+            ME</span>
+        <br>
+        <a class="lsvnt-padding-left" href="mailto:n.lesaveant@strate.design" style="font-size: 20px;"><span
+                class="helvetica"><i>n.lesaveant@strate.design</i></span></a><br>
+        <a class="lsvnt-padding-left" href="https://www.linkedin.com/in/nine-ls/" class="font-yellow"
+            style="font-size: 20px;"><span class="bold">LinkedIn</span></a><br>
+        <a class="lsvnt-padding-left lsvnt-padding-right helvetica" href="#home" class="w3-button w3-light-grey"
+            style="font-size: 20px; float: right; text-decoration: underline; text-decoration-color: rgba(242, 197, 76, 1); text-decoration-thickness: 3px; text-underline-offset: 6px;">Back
+            to
+            top</a>
+        <br>
+        <br>
+
+        <span class="lsvnt-padding-left helvetica" style="font-size: 15px;">Copyright 2022. nine.lsvnt.com. All rights
+            reserved.</span>
+        <br>
+        <span class="lsvnt-padding-left helvetica" style="font-size: 15px;">Made with ❤️ in Wiesbaden</span><br>
+        <br>
+    </div>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
